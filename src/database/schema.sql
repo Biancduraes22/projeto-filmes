@@ -1,0 +1,10 @@
+CREATE TABLE filmes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    titulo TEXT NOT NULL,
+    diretor TEXT NOT NULL,
+    ano INTEGER NOT NULL,
+    duracao INTEGER NOT NULL,
+    nota REAL NOT NULL,
+    genero TEXT NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
