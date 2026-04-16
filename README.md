@@ -3,19 +3,19 @@
 
 Esta é uma API RESTful desenvolvida com Node.js, Express e SQLite para gerenciamento de filmes.
 
-🚀 Tecnologias utilizadas
+  Tecnologias utilizadas
 Node.js
 Express
 SQLite (better-sqlite3)
 JavaScript
-⚙️ Como instalar o projeto
+  Como instalar o projeto
 1. Clonar o repositório
 git clone LINK_DO_SEU_REPOSITORIO
 2. Acessar a pasta
 cd projeto-filmes
 3. Instalar as dependências
 npm install
-▶️ Como executar o projeto
+  Como executar o projeto
 1. Criar o banco de dados
 node src/database/init.js
 2. Inserir os dados (20 filmes)
@@ -26,7 +26,7 @@ node server.js
 O servidor estará disponível em:
 
 http://localhost:3000
-📌 Rotas da API
+  Rotas da API
 🔹 Listar todos os filmes
 
 GET /api/filmes
@@ -57,7 +57,7 @@ PUT /api/filmes/:id
 
 DELETE /api/filmes/:id
 
-🔍 Filtros disponíveis
+  Filtros disponíveis
 Filtrar por gênero:
 /api/filmes?genero=Ação
 Filtrar por diretor:
@@ -66,22 +66,22 @@ Filtrar por nota mínima:
 /api/filmes?nota_min=9
 Filtrar por ano mínimo:
 /api/filmes?ano_min=2010
-🔽 Ordenação
+  Ordenação
 Ordenar por nota (decrescente):
 /api/filmes?ordem=nota&direcao=desc
 Ordenar por título:
 /api/filmes?ordem=titulo&direcao=asc
-📄 Paginação
+ Paginação
 Página 1:
 /api/filmes?pagina=1&limite=5
 Página 2:
 /api/filmes?pagina=2&limite=5
-🔥 Combinação de filtros
+  Combinação de filtros
 
 Exemplo:
 
 /api/filmes?genero=Ação&ordem=nota&direcao=desc&pagina=1&limite=5
-⚠️ Validações
+  Validações
 
 A API possui validações para garantir a integridade dos dados:
 
@@ -89,11 +89,11 @@ Todos os campos são obrigatórios
 Ano deve ser um número válido
 Duração deve ser um número válido
 Nota deve estar entre 0 e 10
-📊 Status Codes
+  Status Codes
 200 → Sucesso
 201 → Criado com sucesso
 400 → Erro de validação
 404 → Não encontrado
 500 → Erro interno
-📦 Collection do Postman
+  Collection do Postman
 
